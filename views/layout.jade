@@ -2,6 +2,27 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/css/style.css')
+    meta(charset="UTF-8")
+    meta(name="Pinguin" author="Pinguin")
+    meta(name="description" content="")
+    link(rel="shortcut icon" href="favicon.png")
+
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    link(rel="stylesheet", href="/css/fonts.css")
+    link(rel="stylesheet", href="/css/main.css")
+    link(rel="stylesheet", href="/css/media.css")
   body
     block content
+    //
+      <[if lt IE 9]>
+      <script src="libs/html5shiv/es5-shim.min.js"></script>
+      <script src="libs/html5shiv/html5shiv.min.js"></script>
+      <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+      <script src="libs/respond/respond.min.js"></script>
+      <![endif]>
+
+    script(src="libs/jquery/jquery-1.11.2.min.js")
+    script(src="libs/modernizr/modernizr.js")
+    script(src="js/common.js")

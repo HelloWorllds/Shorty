@@ -1,0 +1,167 @@
+@import "bourbon/bourbon"
+
+$text-color: #fff
+$dark-color: #000
+$red-color: #9B1818
+$blue-color: #202d3a
+$orange-color: #e87e04
+
+body
+	background-color: $blue-color
+	position: relative
+	font-family: "RobotoRegular", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	min-height: 480px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+	outline:none;
+	box-shadow: $red-color 0 0 4px 2px
+	border-radius: 3px
+	border-color: $red-color
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+nav
+	display: block
+	position: fixed
+	top: 0
+	width: 100%
+	.login-menu
+		display: inline-block
+		float: right
+		margin: 50px 100px 0 0
+		a
+			color: white
+			text-decoration: none
+			cursor: pointer
+			&:hover
+				color: $orange-color
+	.sandwich-button
+		display: inline-block
+		float: left
+		margin: 50px 0 0 100px
+		position: relative
+		#nav-toggle
+			position: absolute			
+			cursor: pointer
+		#nav-toggle	span, #nav-toggle span:before, #nav-toggle span:after
+			cursor: pointer
+			border-radius: 1px
+			height: 3px
+			width: 30px
+			background: white
+			position: absolute
+			display: block
+			content: ''
+		#nav-toggle span:before
+			top: -7px
+		#nav-toggle span:after
+			bottom: -7px
+		#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after
+			transition: all 500ms ease-in-out
+		#nav-toggle.active span
+			background-color: transparent
+		#nav-toggle.active span:before, #nav-toggle.active span:after
+			top: 0
+		#nav-toggle.active span:before
+			transform: rotate(45deg)
+			background: $orange-color
+		#nav-toggle.active span:after
+			transform: rotate(-45deg)
+			background: $orange-color
+
+.main-section
+	display: block
+	top: 0
+	left: 0
+	width: 100%
+	height: 90%
+	overflow: hidden
+	.container
+		width: 40%
+		height: 30%
+		position: absolute
+		top: 40%
+		left: 47%
+		margin: -250px 0 0 -250px
+		.logo
+			display: block
+			margin: 0 auto
+			max-width: 100%
+			height: auto
+			border: none
+			h1
+				display: inline-block
+				font-family: "SnapHand", sans-serif
+				font-size: 150px
+				font-weight: normal
+				margin: 0
+				span
+					color: $orange-color
+			img
+				display: inline-block
+				position: relative
+				top: 21px
+				left: -5px
+			.img-logo-cursor
+				animation: upper 1s linear infinite
+			.img-logo-man
+				left: -27px
+		form
+			text-align: center
+			margin: 0 auto
+			input[type="text"]
+				display: block
+				width: 600px
+				height: 40px
+				border-radius: 8px
+				border: none
+				margin: 0 0 20px 20px
+				text-indent: 20px
+				font-size: 20px
+				&:focus
+					outline: none
+			input[type="submit"]
+				display: block
+				width: 200px
+				height: 40px
+				border-radius: 8px
+				text-transform: uppercase
+				border: 2px solid white
+				font-size: 15px
+				letter-spacing: 1px
+				background-color: transparent
+				color: white
+				margin: 0 0 0 210px
+				cursor: pointer
+				&:hover
+					border: 2px solid $orange-color
+					color: $orange-color
+
+footer
+	display: block
+	position: fixed
+	bottom: 0
+	width: 100%
+	text-align: center
+	p
+		font-size: 11px
+
+@keyframes upper
+	0%,100%
+		opacity: 1
+	20%,65%
+		opacity: 0.05
