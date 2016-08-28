@@ -1,13 +1,130 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+	.main-section .container {
+	  width: 50%;
+	  height: 30%;
+	  top: 40%;
+	  left: 50%;
+	  margin: -250px 0 0 -250px;
+	}
+
+	.main-section .container .logo h1 {
+	  font-size: 120px;
+	}
+
+	.main-section .container .logo img {
+	  top: 21px;
+	  left: -5px;
+	}
+
+	.main-section .container .logo .img-logo-cursor {
+	  width: 4%
+	}
+
+	.main-section .container .logo .img-logo-man {
+	  left: -20px;
+	  width: 27%
+	}
+
+	.main-section .container form input[type="text"] {
+	  width: 470px;
+	  margin: 0 0 20px 20px;
+	  text-indent: 20px;
+	  font-size: 20px;
+	}
+
+	.main-section .container form input[type="submit"] {
+	  margin: 0 0 0 155px;
+	}
+}
+
 @media only screen and (max-width : 1200px) {
-	
+	.main-section .container {
+	  width: 50%;
+	  height: 30%;
+	  top: 50%;
+	  left: 50%;
+	  margin: -250px 0 0 -250px;
+	}
+
+	.main-section .container .logo {
+	  margin-left: 35px;
+	}
+
+	.main-section .container .logo h1 {
+	  font-size: 100px;
+	}
+
+	.main-section .container .logo img {
+	  top: 21px;
+	  left: -5px;
+	}
+
+	.main-section .container .logo .img-logo-cursor {
+	  width: 6%
+	}
+
+	.main-section .container .logo .img-logo-man {
+	  left: -20px;
+	  width: 35%
+	}
+
+	.main-section .container form input[type="text"] {
+	  width: 470px;
+	  margin: 0 0 20px 20px;
+	  text-indent: 20px;
+	  font-size: 20px;
+	}
+
+	.main-section .container form input[type="submit"] {
+	  margin: 0 0 0 155px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.main-section .container {
+	  width: 70%;
+	  height: 30%;
+	  top: 60%;
+	  left: 50%;
+	  margin: -250px 0 0 -250px;
+	}
+
+	.main-section .container .logo {
+	  margin-left: 90px;
+	}
+
+	.main-section .container .logo h1 {
+	  font-size: 70px;
+	}
+
+	.main-section .container .logo img {
+	  top: 21px;
+	  left: -5px;
+	}
+
+	.main-section .container .logo .img-logo-cursor {
+	  width: 5%
+	}
+
+	.main-section .container .logo .img-logo-man {
+	  left: -16px;
+	  width: 30%
+	}
+
+	.main-section .container form input[type="text"] {
+	  width: 370px;
+	  margin: 0 0 20px 70px;
+	  text-indent: 20px;
+	  font-size: 20px;
+	}
+
+	.main-section .container form input[type="submit"] {
+	  margin: 0 0 0 155px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -44,17 +161,17 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	
 }
 
  /*my media*/

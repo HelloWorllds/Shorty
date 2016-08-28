@@ -11,6 +11,15 @@ block content
       |/
       a(href="#") Sign In
 
+  section.main-menu-container
+    ul
+      li
+        i.home-icon
+        |Home
+      li
+        i.log-in-icon
+        |Log In
+
   section.main-section
     div.container
       div.logo
@@ -22,6 +31,14 @@ block content
       form
         input(type="text", name="main-text-box")
         input(type="submit", name="submit" value="Short me")
+
+  section.form-container
+    form.animate
+      button
+        span
+      label YourShorty:
+      input(type="text", name="short-link")
+      input(type="button", name="ok-button", value="OK")
 
   footer
     p Copyright © HiTech Sandbox 2016
