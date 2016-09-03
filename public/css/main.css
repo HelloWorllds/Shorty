@@ -188,7 +188,7 @@ nav .sandwich-button #nav-toggle.active span:after {
   outline: none;
 }
 
-.main-section .container form input[type="submit"] {
+.main-section .container form input[type="button"] {
   display: block;
   width: 200px;
   height: 40px;
@@ -203,7 +203,7 @@ nav .sandwich-button #nav-toggle.active span:after {
   cursor: pointer;
 }
 
-.main-section .container form input[type="submit"]:hover {
+.main-section .container form input[type="button"]:hover {
   border: 2px solid #e87e04;
   color: #e87e04;
 }

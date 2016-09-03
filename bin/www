@@ -9,6 +9,9 @@ var debug = require('debug')('Shorty:server');
 var http = require('http');
 var config = require('config');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/shorty');
+
 /**
  * Get port from environment and store in Express.
  */

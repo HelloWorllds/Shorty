@@ -29,15 +29,15 @@ block content
         img(src="img/cursor.svg", class="img-logo-cursor")
         img(src="img/man.svg", class="img-logo-man")
       form
-        input(type="text", name="main-text-box")
-        input(type="submit", name="submit" value="Short me")
+        input(type="text", id="mainTextBox")
+        input(type="button", name="submit", value="Short me", id="submitButton")
 
   section.form-container
     form.animate
       button
         span
       label YourShorty:
-      input(type="text", name="short-link")
+      input(type="text", id="shortLink")
       input(type="button", name="ok-button", value="OK")
 
   footer

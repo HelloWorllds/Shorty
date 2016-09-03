@@ -24,7 +24,7 @@
 	}
 
 	.main-section .container .logo .img-logo-man {
-	  left: -20px;
+	  left: -27px;
 	  width: 27%
 	}
 
@@ -35,7 +35,7 @@
 	  font-size: 20px;
 	}
 
-	.main-section .container form input[type="submit"] {
+	.main-section .container form input[type="button"] {
 	  margin: 0 0 0 155px;
 	}
 }
@@ -67,7 +67,7 @@
 	}
 
 	.main-section .container .logo .img-logo-man {
-	  left: -20px;
+	  left: -27px;
 	  width: 35%
 	}
 
@@ -78,7 +78,7 @@
 	  font-size: 20px;
 	}
 
-	.main-section .container form input[type="submit"] {
+	.main-section .container form input[type="button"] {
 	  margin: 0 0 0 155px;
 	}
 }
@@ -111,7 +111,7 @@
 	}
 
 	.main-section .container .logo .img-logo-man {
-	  left: -16px;
+	  left: -20px;
 	  width: 30%
 	}
 
@@ -122,7 +122,7 @@
 	  font-size: 20px;
 	}
 
-	.main-section .container form input[type="submit"] {
+	.main-section .container form input[type="button"] {
 	  margin: 0 0 0 155px;
 	}
 }

@@ -1,3 +1,8 @@
 {
-  "port": 3000
+  "webhost": "http://localhost:",
+  "port": 3000,
+  "db": {
+    "host": "localhost",
+    "name": "shorty"
+  }
 }

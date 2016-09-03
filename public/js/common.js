@@ -11,10 +11,6 @@ $(document).ready(function() {
 		wResize();
 	});
 
-	// $("#nav-toggle").click(function() {
-	// 	$(".form-container").css("display", "block");
-	// });
-
 	$(".form-container form button").click(function() {
 		$(".form-container").css("display", "none");
 	});
@@ -39,6 +35,19 @@ $(document).ready(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	}
+
+	$('#submitButton').on('click', function(){
+		$.ajax({
+			url: '/shorten',
+			type: 'POST',
+			dataType: 'JSON',
+			data: {url: $('#mainTextBox').val()},
+			success: function(data){
+				$(".form-container").css("display", "block");
+				$("#shortLink").val(data.shortUrl);
+			}
+		});
+	});
 });
 
 document.querySelector("#nav-toggle").addEventListener("click", function() {
